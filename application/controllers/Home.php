@@ -11,6 +11,13 @@ class Home extends CI_Controller {
 								/*if(!isset($this->session->language)){
 									$this->session->language = "english";
 								}*/
+
+								// MENU
+								$this->lang->load('header_lang', $this->session->language);
+								$data['Home'] = $this->lang->line('Home');
+								$data['Blog'] = $this->lang->line('Blog');
+								$data['Contact'] = $this->lang->line('Contact');
+								$this->load->view ('header',$data);
         }
 
 	/**
@@ -31,11 +38,12 @@ class Home extends CI_Controller {
 	//โหลด แสดงผล หน้าแรก
 	public function index()
 	{
-		$this->lang->load('index_lang', $this->session->language);
+
+		$this->lang->load('home_lang', $this->session->language);
 		$data['error_email_missing'] = $this->lang->line('error_email_missing');
 		echo $this->session->language;
 
-		$this->load->view ('header');
+
 		$this->load->view ('home/index',$data);
 		/*if(!isset($_SESSION['token'])){
 			  redirect('/fiction/login/', 'location');
