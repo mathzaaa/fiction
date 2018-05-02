@@ -8,6 +8,9 @@ class Home extends CI_Controller {
                 parent::__construct();
                 // Your own constructor code
 								$this->load->helper(array('form', 'url', 'file','email','language'));
+								/*if(!isset($this->session->language)){
+									$this->session->language = "english";
+								}*/
         }
 
 	/**
@@ -30,7 +33,9 @@ class Home extends CI_Controller {
 	{
 		$this->lang->load('index_lang', $this->session->language);
 		$data['error_email_missing'] = $this->lang->line('error_email_missing');
-		echo $this->session->data['language'];
+		echo $this->session->language;
+
+		$this->load->view ('header');
 		$this->load->view ('home/index',$data);
 		/*if(!isset($_SESSION['token'])){
 			  redirect('/fiction/login/', 'location');
@@ -44,11 +49,13 @@ class Home extends CI_Controller {
 			$this->load->view("fiction/dashboard", $data);
 		}*/
 	}
-	
+
 	function switchLanguage($language = NULL) {
-        $language = ($language != "") ? $language : "english";
-		$this->session->language = $language;
-        redirect(base_url());
-    }
-	
+			$language = $this->input->post("language");
+	   $language = ($language != "") ? $language : "english";
+			$this->session->language = $language;
+			//echo "Success";
+	    //redirect(base_url());
+  }
+
 }
