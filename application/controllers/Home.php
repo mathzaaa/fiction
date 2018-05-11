@@ -42,9 +42,13 @@ class Home extends CI_Controller {
 		$this->lang->load('home_lang', $this->session->language);
 		$data['error_email_missing'] = $this->lang->line('error_email_missing');
 		echo $this->session->language;
+		
+		//ภาษา
+		$data['read_more'] = $this->lang->line('read_more');
 
 
 		$this->load->view ('home/index',$data);
+		$this->load->view ('footer');
 		/*if(!isset($_SESSION['token'])){
 			  redirect('/fiction/login/', 'location');
 		}
