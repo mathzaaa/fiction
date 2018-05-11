@@ -33,7 +33,7 @@
 </head>
 <body>
 
-
+<?PHP echo $error_email_missing;?>
 <div class="container-fluid paddding mb-5">
     <div class="row mx-0">
         <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
@@ -113,11 +113,13 @@
     <div class="container animate-box" data-animate-effect="fadeIn">
         <div>
             <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Trending </div>
+			
         </div>
         <div class="owl-carousel owl-theme js" id="slider1">
             <div class="item px-2">
                 <div class="fh5co_latest_trading_img_position_relative">
-                    <div class="fh5co_latest_trading_img"><img src="<?PHP echo base_url(); ?>assets/img/fic.jpg" width="100%" height="100%" alt="" class=""/></div>
+                    <div class="fh5co_latest_trading_img"><img src="<?PHP echo base_url(); ?>assets/img/allef-vinicius-108153.jpg" alt=""
+                                                           class="fh5co_img_special_relative"/></div>
                     <div class="fh5co_latest_trading_img_position_absolute"></div>
                     <div class="fh5co_latest_trading_img_position_absolute_1">
                         <a href="single.html" class="text-white"> Here's a new way to take better photos for instagram </a>
@@ -127,17 +129,7 @@
             </div>
             <div class="item px-2">
                 <div class="fh5co_latest_trading_img_position_relative">
-                    <div class="fh5co_latest_trading_img"><img src="<?PHP echo base_url(); ?>assets/img/fic3.jpg" alt="" class=""/></div>
-                    <div class="fh5co_latest_trading_img_position_absolute"></div>
-                    <div class="fh5co_latest_trading_img_position_absolute_1">
-                        <a href="single.html" class="text-white">  </a>
-                        <div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
-                    </div>
-                </div>
-            </div>
-            <div class="item px-2">
-                <div class="fh5co_latest_trading_img_position_relative">
-                    <div class="fh5co_latest_trading_img"><img src="<?PHP echo base_url(); ?>assets/img/fic6.jpg" alt="" class=""/></div>
+                    <div class="fh5co_latest_trading_img"><img src="<?PHP echo base_url(); ?>assets/img/abigail-keenan-65477.jpg" alt="" class="fh5co_img_special_relative"/></div>
                     <div class="fh5co_latest_trading_img_position_absolute"></div>
                     <div class="fh5co_latest_trading_img_position_absolute_1">
                         <a href="single.html" class="text-white"> Here's a new way to take better photos for instagram </a>
@@ -147,7 +139,7 @@
             </div>
             <div class="item px-2">
                 <div class="fh5co_latest_trading_img_position_relative">
-                    <div class="fh5co_latest_trading_img"><img src="<?PHP echo base_url(); ?>assets/img/fic5.jpg" alt="" class=""/></div>
+                    <div class="fh5co_latest_trading_img"><img src="<?PHP echo base_url(); ?>assets/img/ryan-moreno-98837.jpg" alt="" class="fh5co_img_special_relative"/></div>
                     <div class="fh5co_latest_trading_img_position_absolute"></div>
                     <div class="fh5co_latest_trading_img_position_absolute_1">
                         <a href="single.html" class="text-white"> Here's a new way to take better photos for instagram </a>
@@ -157,7 +149,17 @@
             </div>
             <div class="item px-2">
                 <div class="fh5co_latest_trading_img_position_relative">
-                    <div class="fh5co_latest_trading_img"><img src="<?PHP echo base_url(); ?>assets/img/nick-karvounis-78711.jpg" alt="" class=""/></div>
+                    <div class="fh5co_latest_trading_img"><img src="<?PHP echo base_url(); ?>assets/img/science-578x362.jpg" alt="" class="fh5co_img_special_relative"/></div>
+                    <div class="fh5co_latest_trading_img_position_absolute"></div>
+                    <div class="fh5co_latest_trading_img_position_absolute_1">
+                        <a href="single.html" class="text-white"> Here's a new way to take better photos for instagram </a>
+                        <div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item px-2">
+                <div class="fh5co_latest_trading_img_position_relative">
+                    <div class="fh5co_latest_trading_img"><img src="<?PHP echo base_url(); ?>assets/img/nick-karvounis-78711.jpg" alt="" class="fh5co_img_special_relative"/></div>
                     <div class="fh5co_latest_trading_img_position_absolute"></div>
                     <div class="fh5co_latest_trading_img_position_absolute_1">
                         <a href="single.html" class="text-white"> Here's a new way to take better photos for instagram </a>
@@ -166,7 +168,7 @@
                 </div>
             </div>
         </div></br>
-		<div style="text-align:right;"><a href="#" style="color:red;text-align:right;"><?PHP echo $read_more; ?></a></div>
+		<div style="text-align:right;"><a href="#" style="color:red;"><?PHP echo $read_more; ?></a></div>
     </div>
 </div>
 <div class="container-fluid pb-4 pt-5">
